@@ -1,6 +1,6 @@
 # 導入 tkinter 模塊
-從 tkinter 導入 *
-導入 tkinter。消息框 作為 msg
+# 從 tkinter 導入 *
+# 導入 tkinter。消息框 作為 msg
 # 設置窗口
 根 =  Tk ()
 根。幾何（'500x550'）
