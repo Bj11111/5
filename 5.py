@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np
 
 
-# From: https://stackoverflow.com/questions/39922967/python-determine-tic-tac-toe-winner
 def checkRows(board):
     for row in board:
         if len(set(row)) == 1:
