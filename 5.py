@@ -38,12 +38,13 @@ for idx, die in enumerate(st.session_state.dice):
     die.keep = st.checkbox(str(die.value), key=str(idx))
     if die.value != current_value:
         has_won = False
+        a = 1
 
 if has_won:
     st.write("你贏啦~!!")
     st.balloons()
     
-if current_value = 0:
+if  a = 1:
     '''
     # 謝謝來玩 請再次光臨!
     ## 如果想再玩一次 請按F5!
