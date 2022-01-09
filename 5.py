@@ -105,3 +105,8 @@ def main():
         print("Sorry, only one or two people can play.")
         main()
 main()
+if st.session_state.end:
+    '''
+    # 謝謝來玩 請再次光臨!
+    ## 如果想再玩一次 請按F5!
+    '''
