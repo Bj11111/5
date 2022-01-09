@@ -43,7 +43,7 @@ if has_won:
     st.write("你贏啦~!!")
     st.balloons()
     
-if False:
+if st.write("你贏啦~!!"):
     '''
     # 謝謝來玩 請再次光臨!
     ## 如果想再玩一次 請按F5!
