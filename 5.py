@@ -54,18 +54,19 @@ if has_won:
     import streamlit as st
 
 def main():
-	st.title("File Upload Tutorial")
+    st.title("File Upload Tutorial")
 
-	menu = ["Image","Dataset","DocumentFiles","About"]
-	choice = st.sidebar.selectbox("Menu",menu)
+    menu = ["Image","Dataset","DocumentFiles","About"]
+    choice = st.sidebar.selectbox("Menu",menu)
 
-	if choice == "Image":
-		st.subheader("Image")
-            elif choice == "Dataset":
-		st.subheader("Dataset")
+    if choice == "Image":
+    	st.subheader("Image")
 
-            elif choice == "DocumentFiles":
-		st.subheader("DocumentFiles")
+    elif choice == "Dataset":
+    	st.subheader("Dataset")
+
+    elif choice == "DocumentFiles":
+    	st.subheader("DocumentFiles")
     
 #     from PIL import Image
 #     image = Image.open('sunrise.jpg')
