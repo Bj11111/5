@@ -1,6 +1,6 @@
 import random
-import cv2
-import numpy as np
+# import cv2
+# import numpy as np
 import streamlit as st
 
 class Die:
@@ -57,6 +57,9 @@ st.title('彩蛋')
 #     opencv_image = cv2.imdecode(file_bytes,1)
 #     st.image(opencv_image,channels="BGR")
 #     cv2.imwrite('test.jpg',opencv_image)
+
+from keras.preprocessing.image import load_img
+
 from tempfile import NamedTemporaryFile
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
