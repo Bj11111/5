@@ -51,22 +51,28 @@ if has_won:
     ## 祝大家都可以all pass開心過寒假
     '''
     st.title('彩蛋')
-    import streamlit as st
+    
+def img_to_bytes(img_path):
+    img_bytes = Path(img_path).read_bytes()
+    encoded = base64.b64encode(img_bytes).decode()
+    return encoded
+header_html = "<img src='data:image/png;base64,{}' class='img-fluid'>".format(img_to_bytes("header.png"))
+st.markdown(header_html, unsafe_allow_html=True,)
 
-def main():
-    st.title("File Upload Tutorial")
+# def main():
+#     st.title("File Upload Tutorial")
 
-    menu = ["Image","Dataset","DocumentFiles","About"]
-    choice = st.sidebar.selectbox("Menu",menu)
+#     menu = ["Image","Dataset","DocumentFiles","About"]
+#     choice = st.sidebar.selectbox("Menu",menu)
 
-    if choice == "Image":
-    	st.subheader("Image")
+#     if choice == "Image":
+#     	st.subheader("Image")
 
-    elif choice == "Dataset":
-    	st.subheader("Dataset")
+#     elif choice == "Dataset":
+#     	st.subheader("Dataset")
 
-    elif choice == "DocumentFiles":
-    	st.subheader("DocumentFiles")
+#     elif choice == "DocumentFiles":
+#     	st.subheader("DocumentFiles")
     
 #     from PIL import Image
 #     image = Image.open('sunrise.jpg')
