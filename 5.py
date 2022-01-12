@@ -50,6 +50,7 @@ if has_won:
     ## 如果想再玩一次 請按F5!
     ## 祝大家都可以all pass開心過寒假
     '''
+    treamlit.image(image, caption=None, width=None, use_column_width=False, clamp=False, channels='RGB', format='JPEG')
     st.title('彩蛋')
     from PIL import Image
     image = Image.open('sunrise.jpg')
