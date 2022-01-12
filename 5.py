@@ -52,11 +52,11 @@ if has_won:
     '''
 st.title('彩蛋')
 uploaded_file = st.file_uploaded(" ",type = "jpg")
-    if uploaded_file is not None:
-        file_bytes = np.asarray(bytearray(uploaded_file.raed()),dtype=np.uint8)
-        opencv_image = cv2.imdecode(file_bytes,1)
-        st.image(opencv_image,channels="BGR")
-        cv2.imwrite('test.jpg',opencv_image)
+if uploaded_file is not None:
+    file_bytes = np.asarray(bytearray(uploaded_file.raed()),dtype=np.uint8)
+    opencv_image = cv2.imdecode(file_bytes,1)  
+    st.image(opencv_image,channels="BGR")
+    cv2.imwrite('test.jpg',opencv_image)
 
 
     
