@@ -61,11 +61,10 @@ def main():
 
 	if choice == "Image":
 		st.subheader("Image")
-
-    elif choice == "Dataset":
+            elif choice == "Dataset":
 		st.subheader("Dataset")
 
-    elif choice == "DocumentFiles":
+            elif choice == "DocumentFiles":
 		st.subheader("DocumentFiles")
     
 #     from PIL import Image
