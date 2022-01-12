@@ -50,34 +50,10 @@ if has_won:
     ## 如果想再玩一次 請按F5!
     ## 祝大家都可以all pass開心過寒假
     '''
+    
+    
     st.title('彩蛋')
-    
-def img_to_bytes(img_path):
-    img_bytes = Path(img_path).read_bytes()
-    encoded = base64.b64encode(img_bytes).decode()
-    return encoded
-header_html = "<img src='data:image/png;base64,{}' class='img-fluid'>".format(img_to_bytes("https://scontent.xx.fbcdn.net/v/t1.15752-9/p206x206/271439506_408933894191183_71515324726547938_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=aee45a&_nc_ohc=SkRYdAoBUCYAX98dbDa&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVIxzcU3KzZN4112mwDNgHjbSJC6eneygMfDYRYDymGJnQ&oe=6204F2D0.png"))
-st.markdown(header_html, unsafe_allow_html=True,)
+    from PIL import Image
+    image = Image.open('帥哥.jpg')
 
-# def main():
-#     st.title("File Upload Tutorial")
-
-#     menu = ["Image","Dataset","DocumentFiles","About"]
-#     choice = st.sidebar.selectbox("Menu",menu)
-
-#     if choice == "Image":
-#     	st.subheader("Image")
-
-#     elif choice == "Dataset":
-#     	st.subheader("Dataset")
-
-#     elif choice == "DocumentFiles":
-#     	st.subheader("DocumentFiles")
-    
-#     from PIL import Image
-#     image = Image.open('https://scontent.xx.fbcdn.net/v/t1.15752-9/p206x206/271439506_408933894191183_71515324726547938_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=aee45a&_nc_ohc=SkRYdAoBUCYAX98dbDa&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVIxzcU3KzZN4112mwDNgHjbSJC6eneygMfDYRYDymGJnQ&oe=6204F2D0.jpg')
-#     st.image(image, caption='Sunrise by the mountains')
-
-
-
-    
+    st.image(image, caption='酷')
