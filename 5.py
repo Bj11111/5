@@ -51,22 +51,12 @@ if has_won:
     ## 祝大家都可以all pass開心過寒假
     '''
 st.title('彩蛋')
-# uploaded_file = st.file_uploaded(" ",type = "jpg")
-# if uploaded_file is not None:
-#     file_bytes = np.asarray(bytearray(uploaded_file.raed()),dtype=np.uint8)
-#     opencv_image = cv2.imdecode(file_bytes,1)
-#     st.image(opencv_image,channels="BGR")
-#     cv2.imwrite('test.jpg',opencv_image)
+ uploaded_file = st.file_uploaded(" ",type = "jpg")
+    if uploaded_file is not None:
+        file_bytes = np.asarray(bytearray(uploaded_file.raed()),dtype=np.uint8)
+        opencv_image = cv2.imdecode(file_bytes,1)
+        st.image(opencv_image,channels="BGR")
+        cv2.imwrite('test.jpg',opencv_image)
 
-from keras.preprocessing.image import load_img
 
-from tempfile import NamedTemporaryFile
-
-st.set_option('deprecation.showfileUploaderEncoding', False)
-
-buffer = st.file_uploader("Image here pl0x")
-temp_file = NamedTemporaryFile(delete=False)
-if buffer:
-    temp_file.write(buffer.getvalue())
-    st.write(load_img(temp_file.name))
     
