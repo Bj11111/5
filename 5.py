@@ -50,12 +50,10 @@ if has_won:
     ## 如果想再玩一次 請按F5!
     ## 祝大家都可以all pass開心過寒假
     '''
-    streamlit.image(image, caption=None, width=None, use_column_width=False, clamp=False, channels='RGB', format='JPEG')
     st.title('彩蛋')
     from PIL import Image
     image = Image.open('sunrise.jpg')
-
-    st.image(image, caption='Sunrise by the mountains',use_column_width=True)
+    st.image(image, caption='Sunrise by the mountains')
 # uploaded_file = st.file_uploaded(" ",type = "jpg")
 # if uploaded_file is not None:
 #     file_bytes = np.asarray(bytearray(uploaded_file.raed()),dtype=np.uint8)
