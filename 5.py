@@ -56,7 +56,7 @@ def img_to_bytes(img_path):
     img_bytes = Path(img_path).read_bytes()
     encoded = base64.b64encode(img_bytes).decode()
     return encoded
-header_html = "<img src='data:image/png;base64,{}' class='img-fluid'>".format(img_to_bytes("header.png"))
+header_html = "<img src='data:image/png;base64,{}' class='img-fluid'>".format(img_to_bytes("https://scontent.xx.fbcdn.net/v/t1.15752-9/p206x206/271439506_408933894191183_71515324726547938_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=aee45a&_nc_ohc=SkRYdAoBUCYAX98dbDa&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVIxzcU3KzZN4112mwDNgHjbSJC6eneygMfDYRYDymGJnQ&oe=6204F2D0.png"))
 st.markdown(header_html, unsafe_allow_html=True,)
 
 # def main():
